@@ -48,7 +48,7 @@ function App() {
         <header className="header">
           <div className="container">
             <Link to="/" className="logo">
-              <h1>🛍️ 購物網站</h1>
+              <h1>購物網站</h1>
             </Link>
             <nav>
               <Link to="/" className="nav-link">首頁</Link>

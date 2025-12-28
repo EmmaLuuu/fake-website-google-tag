@@ -32,21 +32,21 @@ export const products = [
     name: '機械鍵盤',
     description: '青軸機械軸，RGB 背光，耐用設計',
     price: 3290,
-    image: 'https://images.unsplash.com/photo-1587829741302-dc52908de669?w=500&h=500&fit=crop'
+    image: 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=500&h=500&fit=crop'
   },
   {
     id: 6,
     name: '行動電源',
     description: '20000mAh 大容量，快速充電，雙 USB 輸出',
     price: 1290,
-    image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c8?w=500&h=500&fit=crop'
+    image: 'https://shoplineimg.com/5ed4ab3752b4c0004fc06984/65efa91fefbaed0023a34152/800x.jpg?'
   },
   {
     id: 7,
     name: 'USB-C 傳輸線',
     description: '快速充電，數據傳輸，耐用編織線材',
     price: 390,
-    image: 'https://images.unsplash.com/photo-1587825147138-346237046d1a?w=500&h=500&fit=crop'
+    image: 'https://i2.momoshop.com.tw/1703667741/goodsimg/0012/262/830/12262830_R.webp'
   },
   {
     id: 8,
