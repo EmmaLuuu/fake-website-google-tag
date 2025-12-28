@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/fake-website-google-tag/',
+  base: process.env.NODE_ENV === 'production' ? '/fake-website-google-tag/' : '/',
 })
 
