@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// 恢復根目錄的 index.html 為開發版本
+const devHtmlContent = `<!DOCTYPE html>
 <html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
@@ -11,8 +19,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-565LCQ3K');</script>
     <!-- End Google Tag Manager -->
-    <script type="module" crossorigin src="/fake-website-google-tag/assets/index-W6iIsWCx.js"></script>
-    <link rel="stylesheet" crossorigin href="/fake-website-google-tag/assets/index-2zUF6TjH.css">
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -20,5 +26,12 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+`;
+
+const rootHtmlPath = path.join(__dirname, '../index.html');
+fs.writeFileSync(rootHtmlPath, devHtmlContent);
+console.log('✓ 已恢復 index.html 為開發版本');
+

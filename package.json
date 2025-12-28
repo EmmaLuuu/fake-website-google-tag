@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node scripts/restore-dev-html.js && vite",
+    "build": "node scripts/restore-dev-html.js && vite build && node scripts/copy-dist-html.js",
     "preview": "vite preview"
   },
   "dependencies": {
